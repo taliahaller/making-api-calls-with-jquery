@@ -5,7 +5,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 
-  entry: './src/index.js',
+  entry: './src/weather-interface.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
@@ -64,8 +64,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       inject: 'body',
-      template: './src/index.html',
-      filename: 'index.html',
+      template: './src/weather.html',
+      filename: 'weather.html',
     })
 
   ]
